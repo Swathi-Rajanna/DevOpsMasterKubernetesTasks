@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: petclinic
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spring
+  template:
+    metadata:
+      name: springpod
+      labels:       
+        app: spring              
+    spec:
+      containers:
+      - image: anjurose/chefapp      
+        name: springpetclinic
+---                                
+apiVersion: v1
+kind: Service
+metadata:
+  name: pet-service
+spec:
+  type: NodePort 
+  selector:                        
+    app: spring                
+  ports:
+  - port: 80
+    targetPort: 8080
