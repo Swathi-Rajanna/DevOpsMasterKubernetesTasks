@@ -1,0 +1,6 @@
+Step 1: sudo kubectl run apache --image=httpd --port=80
+Step 2: sudo kubectl get pods
+Step 3: sudo kubectl expose pod apache --type=NodePort
+Step 4: sudo kubectl get svc
+Step 5: Access the httpd at http://<Ipaddress>:NodePort port
+Step 6: kubectl describe pods apache

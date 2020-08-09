@@ -1,0 +1,8 @@
+Step 1 :  sudo kubectl run nginx --image=nginx --port=80
+Step 2 :  sudo kubectl get pods
+Step 3 :  sudo kubectl expose pod nginx --type=NodePort
+Step 4 :  sudo kubectl get svc
+Step 5 :  Access the nginx page from http://<ipaddress>:NodePort port
+Step 6 :  kubectl describe pods nginx
+Step 7 :  sudo kubectl delete svc nginx
+Step 8 :  kubectl delete pods nginx

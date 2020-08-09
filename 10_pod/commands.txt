@@ -1,0 +1,4 @@
+Step 1:  vi nginx_pod.yml
+Step 2:  kubectl apply -f nginx_pod.yml
+Step 3:  kubectl get pods
+Step 4:  kubectl delete pods mypod
