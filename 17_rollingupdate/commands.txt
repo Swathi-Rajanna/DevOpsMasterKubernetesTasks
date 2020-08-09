@@ -1,0 +1,6 @@
+Step 1:  vi kubia.yml
+Step 2:  kubectl apply -f kubia.yml
+Step 3:  kubectl get pods -l app=kubia
+Step 4:  kubectl set image deployment kubia nodejs=luksa/kubia:v2
+Step 5:  kubectl get pods -l app=kubia
+Step 6:  kubectl describe deployment kubia

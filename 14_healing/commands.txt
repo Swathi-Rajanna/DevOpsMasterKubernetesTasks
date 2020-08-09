@@ -1,0 +1,6 @@
+Step 1:  kubectl get rc
+Step 2:  kubectl get svc
+Step 3:  kubectl get pods
+Step 4:  kubectl delete po --all
+Step 5:  kubectl get pods
+

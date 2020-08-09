@@ -1,0 +1,4 @@
+Step 1:  vi nginx_service.yml
+Step 2:  kubectl apply -f nginx_service.yml
+Step 3:  kubectl get svc
+Step 4: Access the Nginx application from the browser at the NodePort

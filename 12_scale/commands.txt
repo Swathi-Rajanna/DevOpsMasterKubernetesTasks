@@ -1,0 +1,4 @@
+Step 1:  kubectl scale replicationcontrollers/nginx --replicas=5
+Step 2:  kubectl get rc
+Step 3:  kubectl get pods
+

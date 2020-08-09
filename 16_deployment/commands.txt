@@ -1,0 +1,12 @@
+Step 1:  vi nginx_deployment.yml
+Step 2:  kubectl apply -f nginx_deployment.yml
+Step 3:  kubectl get deployment
+Step 4:  kubectl get pods
+Step 5:  kubectl describe deployment/nginx-deployment
+Step 6.1: pods=$(kubectl get pods --selector=app=nginx1 --output=jsonpath={.items..metadata.name})
+Step 6.2: echo $pods
+Step 7:  vi nginx_service.yml
+Step 8:  kubectl apply -f nginx_service.yml
+Step 9:  kubectl get svc
+Step 10: Access the service from the browser
+
