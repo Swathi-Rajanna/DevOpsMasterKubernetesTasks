@@ -1,0 +1,12 @@
+Step 1: kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
+Step 2: kubectl edit services kubernetes-dashboard -n kubernetes-dashboard
+Step 3: kubectl proxy &
+
+Open another terminal and run the below commands
+
+Step 4 : kubectl get svc --all-namespaces
+Step 5 : Access the dashboard at the browser
+Step 6 : kubectl create serviceaccount dashboard -n default
+Step 7 : kubectl create clusterrolebinding dashboard-admin -n default --clusterrole=cluster-admin --serviceaccount=default:dashboard
+Step 8 : kubectl get secret $(kubectl get serviceaccount dashboard -o jsonpath="{.secrets[0].name}") -o jsonpath="{.data.token}" | base64 --decode
+
