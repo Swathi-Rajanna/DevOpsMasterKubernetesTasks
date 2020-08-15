@@ -1,3 +1,7 @@
 Step 1:  kubectl set image deployment kubia nodejs=luksa/kubia:v4
 Step 2:  kubectl rollout pause deployment kubia
 Step 3:  kubectl rollout resume deployment kubia
+
+Method 2: 
+Step 1: kubectl apply -f newkubia.yml
+
