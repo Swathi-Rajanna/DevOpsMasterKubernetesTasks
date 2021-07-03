@@ -8,7 +8,7 @@ spec:
   rules:
    - http:
       paths: 
-      - path: /
+      - path: /first
         backend:
           serviceName: hello-kubernetes-first
           servicePort: 80
