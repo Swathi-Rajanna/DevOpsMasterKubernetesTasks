@@ -1,0 +1,4 @@
+sudo minikube addons enable ingress # enable ingress for minikube
+It will take some time to set that up
+Access the services with IP address/ and Ipaddress/second
+https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
